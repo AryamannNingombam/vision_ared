@@ -14,16 +14,17 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Home(),
+      
       routes: {
-        'home/' : (context)=>Home(),
-         'boards/' : (context)=>Boards(),
-        'chapter/' : (context)=>Chapter(),
-        'class/' : (context)=>Class(),
-        'images/' : (context)=>Images(),
-        'subject/' : (context)=>Subject(),
-    'subtopic/' : (context)=>Subtopic(),
+        Home.URL : (context)=>Home(),
+         Boards.URL : (context)=>Boards(),
+        Chapter.URL : (context)=>Chapter(),
+        Class.URL : (context)=>Class(),
+        Images.URL : (context)=>Images(),
+        Subject.URL : (context)=>Subject(),
+    Subtopic.URL : (context)=>Subtopic(),
       },
-      initialRoute: 'home/',
+      initialRoute: Home.URL,
     );
   }
 }
